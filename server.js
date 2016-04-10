@@ -31,7 +31,7 @@ app.get('/:url(*)', function(req, res){
 				let newUrl = new Url();
 				newUrl.originalUrl = input;
 				newUrl.random = Math.floor(Math.random() * (9999 - 1 + 1)) + 1;
-				newUrl.newUrl = ('localhost:5000/' + newUrl.random);
+				newUrl.newUrl = ('http://jdf-shorturl.herokuapp.com/' + newUrl.random);
 
 				newUrl.save(function(err, newUrl){
 					if(err){return next(err);}
@@ -61,7 +61,7 @@ app.get('/:url(*)', function(req, res){
 					let newUrl = new Url();
 					newUrl.originalUrl = input;
 					newUrl.random = Math.floor(Math.random() * (9999 - 1 + 1)) + 1;
-					newUrl.newUrl = ('localhost:5000/' + newUrl.random);
+					newUrl.newUrl = ('http://jdf-shorturl.herokuapp.com/' + newUrl.random);
 
 					newUrl.save(function(err, newUrl){
 						if(err){return next(err);}
