@@ -1,0 +1,17 @@
+{
+  "name": "url-shortener-microservice",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "jdf5196",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12",
+    "validator": "^5.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
